@@ -20,8 +20,9 @@ def reset():
 
 def change(x,y):
     global aim_x, aim_y
-    aim_x = x
-    aim_y = y
+    if aim_x!=-x and aim_y!=-y:
+        aim_x = x
+        aim_y = y
     
 def inside_map():
     if -200<=snake[-1][0]<=180 and -190<=snake[-1][1]<200:
